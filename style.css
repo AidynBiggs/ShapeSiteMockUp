@@ -1,51 +1,43 @@
 @-ms-viewport{
     width: device-width;
+    zoom: 1.0;
 }
 html, body{
-
+    margin: 0 auto;
     background-color: white;
 }
-body{
-    margin: 0;
-}
+
 
 
 .topnav{
     display: flex;
-    width: 90%;
+    width: 100%;
     height:30%;
-    margin-right: 5%;
-    margin-left: 5%;
     background:whitesmoke;
-    align-items: center;
-    justify-content: center; 
     border: 3px red;
+    align-items: center;
+    justify-content: center;
 }
-
 .topnav a{
     color:black;
-    margin: 0 40px;
     text-decoration: none;
     font-size: 30px;
-    padding: 10px 10px 10px 10px;
+    border-bottom: solid 2px black;
+    margin: 0 40px;
 }
-
+.logo{
+    width: 150px;
+    height: 100%;
+    margin: 10px 0 10px 0;
+}
 .topnav a:hover{
     background-color: peachpuff;
     border-radius: 8px;
 }
-
 .topnav a.active{
     color: darkblue;
 }
 
-.logo{
-    height: auto;
-    width: auto;
-    max-height: 150px;
-    max-width: 150px;
-    padding: 1em;
-}
 
 .computer img{
     height: 100%;
@@ -75,47 +67,53 @@ p{
     display: flex;
     background-image: url(./images/swipe.webp);
     background-position: left 80%;
-    width: 100%;
-    height: 800px;
     justify-content: space-evenly;
     text-align: center;
 }
-
-
 .item{
-    height: auto;
     width: 23%;
     background-color: white;
     border: 1px solid black;
     box-shadow: 5px 5px 20px 8px black;
+    clear: both;
 }
-
-
 .topimage{
     height: 50%;
     width: 100%;
 }
-
 .bar-headings{
     font-size: 30px;
     font-family: sans-serif;
     font-weight: bold;
 }
-
 .button{
     font-family: sans-serif;
     font-size: 18px;
     color: black;
     background-color: rgb(40, 175, 219);
     border-radius: 12px;
-    padding: 5px 15px;
     border: 1px solid coral;
-
 }
-
 .button:hover{
     opacity:0.5;
 }
+
+
+@media (max-width: 900px){
+    .container{
+        flex-direction: column;
+    }
+    .item{
+        width: 100%;
+        margin: 5px 0 5px 0;
+    }
+    .topimage{
+        margin: 10px 0;
+        height: 50%;
+        width: 70%;
+    }
+}
+
 
 .footer{
     height: 400px;
