@@ -1,6 +1,8 @@
+@-ms-viewport{
+    width: device-width;
+}
 html, body{
-    height: 100%;
-    width: auto;
+
     background-color: white;
 }
 body{
