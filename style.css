@@ -74,7 +74,7 @@ p{
     width: 23%;
     background-color: white;
     border: 1px solid black;
-    box-shadow: 5px 5px 20px 8px black;
+    box-shadow: 5px 5px 20px 8px rgb(83, 83, 224);
     clear: both;
 }
 .topimage{
