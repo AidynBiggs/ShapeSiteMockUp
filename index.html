@@ -1,47 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <link href="./style.css" rel="stylesheet"/>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Shape YEG</title>
-    </head>
+<head>
+    <link href="./style.css" rel="stylesheet"/>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <title>Shape YEG</title>
+</head>
 
-    <header class='main-head' href='top'>
+<header href='top'>
 
-        <nav class='topnav'>
-              <a href='./index.html' class='active'>Home</a>
-              <a href='./our-story.html'>Our Story</a>
-              <img class='logo' src='./images/shape-logo.png'>
-              <a href='./services.html'>Services</a>
-              <a href='./contact.html'>Contact Us</a>
-        </nav>
+    <nav class="navbar">
+        <a href='./index.html' class='active'>Home</a>
+        <a href='./our-story.html'>Our Story</a>
+        <img class='logo' src='./images/shape-logo.png'>
+        
+        <div class="dropdown">
+            <button class="dropbtn" onclick="myFunction()">Services
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content" id="myDropdown">
+                <a href="./social-media.html">Social Media</a>
+                <a href="./content-cur.html">Content Curation</a>
+                <a href="./paid-ads.html">Paid Advertizing</a>
+            </div>
+        </div>
 
-    </header>
+        <a href='./contact-us.html'>Contact Us</a>
+    </nav>
+    <script>
+        /* When the user clicks on the button, 
+        toggle between hiding and showing the dropdown content */
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function (e) {
+            if (!e.target.matches('.dropbtn')) {
+                var myDropdown = document.getElementById("myDropdown");
+                if (myDropdown.classList.contains('show')) {
+                    myDropdown.classList.remove('show');
+                }
+            }
+        }
+    </script>
+
+</header>
     
-    <body>
-        <br>
-        <span class='line'></span>
-        <br>
-      <a class='computer'><img src='./images/logo-on-comp.png'/></a>
+<body>
+    <br>
+    <span class='line'></span>
+    <br>
+    <a class='computer'><img src='./images/logo-on-comp.png'/></a>
 
-      <aside class="message">
-          <p>Shape Your brand<br>with strategic digital solutions!</p>
-      </aside>
+    <aside class="message">
+        <p>Shape Your brand<br>with strategic digital solutions!</p>
+    </aside>
 
-     <div class='container'>
-         <div class="item">
-             <img class='topimage' src='./images/SMM.webp'/>
-             <h2 class='bar-headings'>Social Media<br>Management</h2>
-             <p>Whether you are starting your social media journey or looking to grow an existing platform, we can help. We can manage
+    <div class='container'>
+        <div class="column">
+            <img class='topimage' src='./images/SMM.webp'/>
+            <h2 class='bar-headings'>Social Media<br>Management</h2>
+            <p>Whether you are starting your social media journey or looking to grow an existing platform, we can help. We can manage
             it, so you'll have more time to dedicate to your business.</p>
             <br><br>
             <button class='button'>Learn More</button>
             <br><br>
-         </div>
-         <div class="item">
+        </div>
+        <div class="column">
             <img class='topimage' src='./images/Content.webp' />
             <h2 class='bar-headings'>Content<br>Curation</h2>
             <p>You are an expert on what you do and we are experts on creating content – together, a powerful force. Custom content
@@ -50,7 +81,7 @@
             <button class='button'>Learn More</button>
             <br><br>
          </div>
-         <div class="item">
+         <div class="column">
             <img class='topimage' src='./images/PPC.webp' />
             <h2 class='bar-headings'>Pay-Per-Click<br>Advertizing</h2>
             <p>Place your message in front of your target customers and increase conversions. Amplify the results of your marketing
@@ -59,22 +90,25 @@
             <button class='button'>Learn More</button>
             <br><br>
          </div>
-     </div>
+    </div>
     
-     <section class='contact-form'>
+    <section class='contact-form'>
     
-     </section>
+    </section>
 
-    </body>
+</body>
 
-    <footer class='footer'>
-        <br>
-        <span class='line'></span>
-        <br>
-        <h1>Connect With Us</h1>
-        <p>Building a business is a journey. Follow ours to see how we can shape your brand!</p>
-        <img src='./images/instalogo.webp'/><img src='./images/fblogo.webp'/>
-        <br>
-        <a href="#top">Top of Page</a>
-    </footer>
+<footer class='footer'>
+    <!-- <span class='line'></span> -->
+    <h1>Connect With Us</h1>
+    <p>Building a business is a journey. Follow ours to see how we can shape your brand!</p>
+    <a href='https://www.instagram.com/shapemarketingyeg/?hl=en' target='_blank'><img src='./images/instalogo.webp' /></a>
+    <a href='https://www.facebook.com/shapemarketingyeg/' target='_blank'><img src='./images/fblogo.webp'/></a>
+    <br>
+    <div class='page-ref-links'>
+        <a href="#top">Top of Page</a>&nbsp;&nbsp;
+        <a href='./our-story.html'>Our Story</a>&nbsp;&nbsp;
+        <a href='./contact-us.html'>Contact Us</a>
+    </div>
+</footer>
 </html>

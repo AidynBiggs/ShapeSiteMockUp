@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="./style.css" rel="stylesheet" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <title>Shape YEG</title>
+</head>
+
+<header href='top'>
+
+    <nav class="navbar">
+        <a href='./index.html'>Home</a>
+        <a href='./our-story.html' class='active'>Our Story</a>
+        <img class='logo' src='./images/shape-logo.png'>
+
+        <div class="dropdown">
+            <button class="dropbtn" onclick="myFunction()">Services
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content" id="myDropdown">
+                <a href="./social-media.html">Social Media</a>
+                <a href="./content-cur.html">Content Curation</a>
+                <a href="./paid-ads.html">Paid Advertizing</a>
+            </div>
+        </div>
+
+        <a href='./contact-us.html'>Contact Us</a>
+    </nav>
+    <script>
+        /* When the user clicks on the button, 
+        toggle between hiding and showing the dropdown content */
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function (e) {
+            if (!e.target.matches('.dropbtn')) {
+                var myDropdown = document.getElementById("myDropdown");
+                if (myDropdown.classList.contains('show')) {
+                    myDropdown.classList.remove('show');
+                }
+            }
+        }
+    </script>
+
+</header>
+
+
+<footer class='footer'>
+    <!-- <span class='line'></span> -->
+    <h1>Connect With Us</h1>
+    <p>Building a business is a journey. Follow ours to see how we can shape your brand!</p>
+    <a href='https://www.instagram.com/shapemarketingyeg/?hl=en' target='_blank'>
+        <imgsrc='. /images/instalogo.webp' />
+    </a>
+    <a href='https://www.facebook.com/shapemarketingyeg/' target='_blank'><img src='./images/fblogo.webp' /></a>
+    <br>
+    <div class='page-ref-links'>
+        <a href="#top">Top of Page</a>&nbsp;&nbsp;
+        <a href='./our-story.html'>Our Story</a>&nbsp;&nbsp;
+        <a href='./contact-us.html'>Contact Us</a>
+    </div>
+</footer>
+
+
+</html>

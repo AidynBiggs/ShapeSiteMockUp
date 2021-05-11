@@ -6,32 +6,99 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
     <title>Shape YEG</title>
 </head>
 
-<header class='main-head' href='top'>
+<header href='top'>
 
-    <nav class='topnav'>
-        <a href='./index.html' class='active'>Home</a>
-        <a href='./our-story.html'>Our Story</a>
+    <nav class="navbar">
+        <a href='./index.html'>Home</a>
+        <a href='./our-story.html' class='active'>Our Story</a>
         <img class='logo' src='./images/shape-logo.png'>
-        <a href='./services.html'>Services</a>
-        <a href='./contact.html'>Contact Us</a>
+
+        <div class="dropdown">
+            <button class="dropbtn" onclick="myFunction()">Services
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content" id="myDropdown">
+                <a href="./social-media.html">Social Media</a>
+                <a href="./content-cur.html">Content Curation</a>
+                <a href="./paid-ads.html">Paid Advertizing</a>
+            </div>
+        </div>
+
+        <a href='./contact-us.html'>Contact Us</a>
     </nav>
+    <script>
+        /* When the user clicks on the button, 
+        toggle between hiding and showing the dropdown content */
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function (e) {
+            if (!e.target.matches('.dropbtn')) {
+                var myDropdown = document.getElementById("myDropdown");
+                if (myDropdown.classList.contains('show')) {
+                    myDropdown.classList.remove('show');
+                }
+            }
+        }
+    </script>
 
 </header>
+
 <body>
-    
+    <section class='our-story'>
+            <h1>Our Story</h1>
+            <hr class='short-line'><br>
+            <p>Welcome to Shape Marketing! We're your consultants — Shea and Katrina. Running a business is no easy task, and sometimes
+            it's hard to know where to begin — we get it! Your social media is a great place to start, and we're here to help you
+            promote your business the way you imagined when you decided to give life to your passion!
+            </p>
+            <hr class='double-line'>
+            <p>However you came across our business — we're so grateful that you did! Wherever you're at in your entrepreneurial
+            journey, we'd like to welcome you to the Shape family and introduce ourselves! We're Shea and Katrina, digital marketing
+            consultants extraordinaire and the co-founders of Shape Marketing. Our agency is a platform created to help you dig to
+            the root of your vision, find your voice and shape your brand through digital solutions unique to your business!</p>
+            <br>
+            <p>To help you get to know us better, let's take a quick look back at when we first met. We were both completing a
+            marketing degree at NAIT and Shea sat in front of Kat in an 8 a.m. Sales Management course — yup, just two students
+            living off Starbuck’s lattes and three hours of sleep! We connected right away and because we had similar values when it
+            came to marketing, we quickly became each others go-to project partner.</p>
+            <br>
+            <p>We never really intended to start a business. But hey, if we've learned anything from working with our clients over the
+            last couple of years, it's that the best and most intriguing ideas are usually unintentional. We both knew that there
+            was a more personal aspect missing in the style of marketing most businesses have adopted, and we wanted help our
+            clients fill that gap. The goal? To engulf ourselves in the businesses we partner with to fully understand the story and
+            the purpose behind their offerings when creating content. To not let that purpose get lost behind an advertisement, and
+            to be their "go-to" project partner just like we were, and have been for each other ever since.</p>
+            <br>
+            <p>So, with just our laptops, our Starbucks, and our determination in hand we launched Shape Marketing! We’re so excited to
+            connect with you, and to help you promote your vision as you become a part of ours!</p>
+
+    </section>
+
+
 </body>
 
 <footer class='footer'>
-    <br>
-    <span class='line'></span>
-    <br>
+    <!-- <span class='line'></span> -->
     <h1>Connect With Us</h1>
     <p>Building a business is a journey. Follow ours to see how we can shape your brand!</p>
-    <img src='./images/instalogo.webp' /><img src='./images/fblogo.webp' />
+    <a href='https://www.instagram.com/shapemarketingyeg/?hl=en' target='_blank'><imgsrc='./images/instalogo.webp' /></a>
+    <a href='https://www.facebook.com/shapemarketingyeg/' target='_blank'><img src='./images/fblogo.webp' /></a>
     <br>
-    <a href="#top">Top of Page</a>
+    <div class='page-ref-links'>
+        <a href="#top">Top of Page</a>&nbsp;&nbsp;
+        <a href='./our-story.html'>Our Story</a>&nbsp;&nbsp;
+        <a href='./contact-us.html'>Contact Us</a>
+    </div>
 </footer>
+
+
 </html>
