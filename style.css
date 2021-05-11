@@ -32,15 +32,13 @@ html, body{
     height: 100%;
     margin: 10px 0 10px 0;
 }
-
 .navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
     background-color: peachpuff;
     border-radius: 8px;
 }
-a.active{
+a.active, .active{
     color: darkblue;
 }
-
 
 .dropdown .dropbtn {
   padding: 0;
@@ -53,7 +51,6 @@ a.active{
   border-bottom: solid 2px black;
   margin: 0 20px;
 }
-
 .dropdown-content {
   display: none;
   position: absolute;
@@ -62,7 +59,6 @@ a.active{
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
 }
-
 .dropdown-content a {
   font-size: 20px;
   float: none;
@@ -72,41 +68,35 @@ a.active{
   display: block;
   text-align: left;
 }
-
 .dropdown-content a:hover {
   background-color: #ddd;
 }
-
 .show {
   display: block;
 }
-
-
 /* END NAV BAR ELEMENTS */
 
+
+
+/* HOME PAGE START */
 .computer img{
     height: 100%;
     width: 100%;
 }
-
 .line{
     border-bottom: 3px solid black;
     display: block;
 }
-
-
 aside p{
     font-size:60px;
     padding: 10px;
     text-align: center;
 }
-
 p{
     text-align:center;
     font-size: 18px;
     margin: 1em;
 }
-
 .container{
     display: flex;
     background-image: url(./images/swipe.webp);
@@ -136,10 +126,14 @@ p{
     background-color: rgb(40, 175, 219);
     border-radius: 12px;
     border: 1px solid coral;
+
 }
 .button:hover{
     opacity:0.5;
 }
+/* HOME PAGE END */
+
+
 
 /* OUR STORY PAGE */
 .our-story{
@@ -166,13 +160,30 @@ p{
     width:80%;
     text-align: center;
 }
-
+/* OUR STORY PAGE END */
 
 
 
 
 /* END OUR STORY PAGE */
-@media (max-width: 900px){
+
+
+
+/* SERVICES PAGES START */
+.social-media-descr{
+    display: flex;
+    justify-content: right;
+    text-align: right;
+}
+
+
+
+
+/* SERVICES PAGES END */
+
+
+
+@media (max-width: 1000px){
     .container{
         flex-direction: column;
     }
