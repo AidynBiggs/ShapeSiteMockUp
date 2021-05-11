@@ -51,6 +51,14 @@ a.active, .active{
   border-bottom: solid 2px black;
   margin: 0 20px;
 }
+.arrow-down{
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display:inline-block;
+    padding: 3px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
 .dropdown-content {
   display: none;
   position: absolute;
